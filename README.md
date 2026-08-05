@@ -1,8 +1,63 @@
-# DII Backend Assignment — Student Course Management System
+# asg-backend-682110178
 
-> **Assignment:** Backend Development (DII-Backend-2026)
-> **Due:** 9 August 2026, 16:59
-> **Repository:** https://github.com/Pinont/asg-backend-682110178
+## 📖 Project Overview
+
+**Student Course Management System** — A Spring Boot REST API for managing students, courses, enrollments, and profiles. Built for DII-Backend-2026 assignment.
+
+| Property | Value |
+|----------|-------|
+| **Course** | DII-Backend-2026 |
+| **Assignment** | Backend Development (asg-backend) |
+| **Due Date** | 9 August 2026, 16:59 |
+| **Repository** | https://github.com/Pinont/asg-backend-682110178 |
+| **Boilerplate Source** | camtdii/asg-backend |
+
+### Key Features
+- **4 JPA Entities** with bidirectional relationships (Student, Profile, Course, Enrollment)
+- **3 Relationship Types**: One-to-One, Many-to-One, One-to-Many
+- **Full CRUD + PATCH** REST endpoints for all entities
+- **Bean Validation** on all DTOs
+- **H2 In-Memory Database** with web console
+- **35 Unit Tests** (Mockito) — all passing
+- **Multi-module Maven** (domain-model, web-service, web-front)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- **Java 11+** (verified: OpenJDK 11+)
+- **Maven 3.8+**
+
+### Quick Start
+```bash
+# 1. Clone the repository
+git clone https://github.com/Pinont/asg-backend-682110178.git
+cd asg-backend-682110178
+
+# 2. Build all modules
+mvn clean install
+
+# 3. Run the REST API (web-service module)
+cd web-service
+mvn spring-boot:run
+```
+
+### Verify It Works
+| Check | URL |
+|-------|-----|
+| **API Base** | http://localhost:8080 |
+| **H2 Console** | http://localhost:8080/h2-console |
+| **JDBC URL** | `jdbc:h2:mem:assignment_db` |
+| **Username** | `sa` |
+| **Password** | *(leave empty)* |
+
+### Run Tests
+```bash
+# From project root
+mvn test
+```
+Expected: **Tests run: 35, Failures: 0, Errors: 0, Skipped: 0**
 
 ---
 
@@ -36,7 +91,7 @@
 └─────────────┘
 ```
 
-### Relationship Types (3 required)
+### Relationship Types
 
 | Type | Example | Entities |
 |------|---------|----------|
@@ -175,7 +230,7 @@ This project was developed with assistance from **AI coding agents**:
 
 | Tool | Purpose |
 |------|---------|
-| **Hermes Agent (Ciel)** | Architecture design, code scaffolding, test generation, H2 configuration, Maven setup |
+| **Hermes Agent** | Architecture design, code scaffolding, test generation, H2 configuration, Maven setup |
 | **Composio MCP** | GitHub operations (fork, push), Google Classroom/Drive integration |
 
 **Human contributions:**
@@ -197,25 +252,3 @@ This project was developed with assistance from **AI coding agents**:
 - README.md documentation
 
 All AI-generated code was reviewed, compiled, and verified with `mvn clean test` (35/35 tests passing).
-
----
-
-## 📝 Submission Checklist
-
-- [x] H2 database configured (`application.properties`)
-- [x] ≥ 4 entities with 3 relationship types (1:1, N:1, 1:N)
-- [x] Entities, Repositories, Services, Controllers, DTOs for each entity
-- [x] CRUD endpoints (Create, List, Update/Patch, Delete) per entity
-- [x] ≥ 4 unit tests for controllers (35 total, all passing)
-- [x] README.md with domain model diagram + AI declaration
-- [x] Code pushed to GitHub Classroom repo
-- [ ] Submit by **9 August 2026, 16:59** via Google Classroom
-- [ ] Ready for in-person code walkthrough
-
----
-
-## 🔗 Links
-
-- **GitHub Repository:** https://github.com/Pinont/asg-backend-682110178
-- **Original Boilerplate:** https://github.com/camtdii/asg-backend
-- **Google Classroom Assignment:** https://classroom.google.com/c/ODcxMTk4MTc5MDI3/a/ODcxMzkwOTYyOTcw/details
