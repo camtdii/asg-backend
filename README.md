@@ -1,6 +1,6 @@
 # asg-backend-682110178
 
-## 📖 Project Overview
+## Project Overview
 
 **Student Course Management System** — A Spring Boot REST API for managing students, courses, enrollments, and profiles. Built for DII-Backend-2026 assignment.
 
@@ -15,7 +15,7 @@
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - **Java 11+** (verified: OpenJDK 11+)
@@ -53,7 +53,7 @@ Expected: **Tests run: 35, Failures: 0, Errors: 0, Skipped: 0**
 
 ---
 
-## 📐 Domain Model
+## Domain Model
 
 ### Entities & Relationships
 
@@ -97,7 +97,7 @@ Expected: **Tests run: 35, Failures: 0, Errors: 0, Skipped: 0**
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |-------|------------|
@@ -111,24 +111,24 @@ Expected: **Tests run: 35, Failures: 0, Errors: 0, Skipped: 0**
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 ```
 | asg-backend-682110178/
 ├── domain-model/          # JPA Entities + Repositories (jar)
-│   └── th.mfu.domain      # Student, Profile, Course, Enrollment
-│   └── th.mfu.repository  # Spring Data JPA Repositories
+│   └── th.camt.domain      # Student, Profile, Course, Enrollment
+│   └── th.camt.repository  # Spring Data JPA Repositories
 ├── web-service/           # Spring Boot REST API (jar, runs on :8080)
-│   └── th.mfu.dto         # Request/Response DTOs
-│   └── th.mfu.service     # Business Logic Services
-│   └── th.mfu.controller  # REST Controllers
-│   └── th.mfu.App         # Main Application
+│   └── th.camt.dto         # Request/Response DTOs
+│   └── th.camt.service     # Business Logic Services
+│   └── th.camt.controller  # REST Controllers
+│   └── th.camt.App         # Main Application
 └── web-front/             # Web Frontend (war, Jetty on :8081)
 ```
 
 ---
 
-## 🚀 Running the Application
+## Running the Application
 
 ### Prerequisites
 - Java 11+
@@ -153,7 +153,7 @@ mvn spring-boot:run
 
 ---
 
-## 📚 REST API Endpoints
+## REST API Endpoints
 
 ### Students (`/api/students`)
 | Method | Endpoint | Description |
@@ -196,7 +196,7 @@ mvn spring-boot:run
 
 ---
 
-## 🤖 AI Usage Declaration
+## AI Usage Declaration
 
 This project was developed with assistance from **AI coding agents**:
 
