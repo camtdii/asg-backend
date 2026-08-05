@@ -4,14 +4,6 @@
 
 **Student Course Management System** — A Spring Boot REST API for managing students, courses, enrollments, and profiles. Built for DII-Backend-2026 assignment.
 
-| Property | Value |
-|----------|-------|
-| **Course** | DII-Backend-2026 |
-| **Assignment** | Backend Development (asg-backend) |
-| **Due Date** | 9 August 2026, 16:59 |
-| **Repository** | https://github.com/Pinont/asg-backend-682110178 |
-| **Boilerplate Source** | camtdii/asg-backend |
-
 ### Key Features
 - **4 JPA Entities** with bidirectional relationships (Student, Profile, Course, Enrollment)
 - **3 Relationship Types**: One-to-One, Many-to-One, One-to-Many
@@ -32,7 +24,7 @@
 ### Quick Start
 ```bash
 # 1. Clone the repository
-git clone https://github.com/Pinont/asg-backend-682110178.git
+git clone https://github.com/camtdii/asg-backend-682110178.git
 cd asg-backend-682110178
 
 # 2. Build all modules
@@ -122,15 +114,15 @@ Expected: **Tests run: 35, Failures: 0, Errors: 0, Skipped: 0**
 ## 📦 Project Structure
 
 ```
-asg-backend-682110178/
+| asg-backend-682110178/
 ├── domain-model/          # JPA Entities + Repositories (jar)
-│   └── th.camt.domain     # Student, Profile, Course, Enrollment
-│   └── th.camt.repository # Spring Data JPA Repositories
+│   └── th.mfu.domain      # Student, Profile, Course, Enrollment
+│   └── th.mfu.repository  # Spring Data JPA Repositories
 ├── web-service/           # Spring Boot REST API (jar, runs on :8080)
-│   └── th.camt.dto        # Request/Response DTOs
-│   └── th.camt.service    # Business Logic Services
-│   └── th.camt.controller # REST Controllers
-│   └── th.camt.App        # Main Application
+│   └── th.mfu.dto         # Request/Response DTOs
+│   └── th.mfu.service     # Business Logic Services
+│   └── th.mfu.controller  # REST Controllers
+│   └── th.mfu.App         # Main Application
 └── web-front/             # Web Frontend (war, Jetty on :8081)
 ```
 
@@ -201,26 +193,6 @@ mvn spring-boot:run
 | GET | `/student/{studentId}` | Get profile by student ID |
 | PATCH | `/{id}` | Update profile |
 | DELETE | `/{id}` | Delete profile |
-
----
-
-## ✅ Test Results
-
-```
-Tests run: 35, Failures: 0, Errors: 0, Skipped: 0
-```
-
-| Test Class | Tests | Status |
-|------------|-------|--------|
-| StudentControllerTest | 8 | ✅ Pass |
-| CourseControllerTest | 8 | ✅ Pass |
-| ProfileControllerTest | 9 | ✅ Pass |
-| EnrollmentControllerTest | 10 | ✅ Pass |
-
-Run tests:
-```bash
-mvn test
-```
 
 ---
 

@@ -1,4 +1,4 @@
-package th.mfu.domain;
+package th.camt.domain;
 
 import javax.persistence.*;
 

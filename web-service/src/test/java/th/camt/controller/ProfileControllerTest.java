@@ -1,7 +1,7 @@
-package th.mfu.controller;
+package th.camt.controller;
 
-import th.mfu.dto.ProfileDTO;
-import th.mfu.service.ProfileService;
+import th.camt.dto.ProfileDTO;
+import th.camt.service.ProfileService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

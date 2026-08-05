@@ -1,10 +1,10 @@
-package th.mfu.service;
+package th.camt.service;
 
-import th.mfu.domain.Profile;
-import th.mfu.domain.Student;
-import th.mfu.repository.ProfileRepository;
-import th.mfu.repository.StudentRepository;
-import th.mfu.dto.ProfileDTO;
+import th.camt.domain.Profile;
+import th.camt.domain.Student;
+import th.camt.repository.ProfileRepository;
+import th.camt.repository.StudentRepository;
+import th.camt.dto.ProfileDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

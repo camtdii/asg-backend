@@ -1,7 +1,7 @@
-package th.mfu.controller;
+package th.camt.controller;
 
-import th.mfu.dto.CourseDTO;
-import th.mfu.service.CourseService;
+import th.camt.dto.CourseDTO;
+import th.camt.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

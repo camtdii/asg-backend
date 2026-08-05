@@ -1,8 +1,8 @@
-package th.mfu.service;
+package th.camt.service;
 
-import th.mfu.domain.Course;
-import th.mfu.repository.CourseRepository;
-import th.mfu.dto.CourseDTO;
+import th.camt.domain.Course;
+import th.camt.repository.CourseRepository;
+import th.camt.dto.CourseDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,7 +1,7 @@
-package th.mfu.controller;
+package th.camt.controller;
 
-import th.mfu.dto.EnrollmentDTO;
-import th.mfu.service.EnrollmentService;
+import th.camt.dto.EnrollmentDTO;
+import th.camt.service.EnrollmentService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

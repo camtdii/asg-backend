@@ -1,11 +1,10 @@
-package th.mfu.service;
+package th.camt.service;
 
-import th.mfu.domain.Student;
-import th.mfu.domain.Profile;
-import th.mfu.repository.StudentRepository;
-import th.mfu.repository.ProfileRepository;
-import th.mfu.dto.StudentDTO;
-import th.mfu.dto.ProfileDTO;
+import th.camt.domain.Student;
+import th.camt.domain.Profile;
+import th.camt.repository.StudentRepository;
+import th.camt.dto.StudentDTO;
+import th.camt.dto.ProfileDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,9 +19,6 @@ public class StudentService {
 
     @Autowired
     private StudentRepository studentRepository;
-
-    @Autowired
-    private ProfileRepository profileRepository;
 
     public StudentDTO create(StudentDTO dto) {
         Student student = new Student(dto.getName(), dto.getEmail());

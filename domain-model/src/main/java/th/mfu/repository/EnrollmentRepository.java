@@ -1,6 +1,6 @@
-package th.mfu.repository;
+package th.camt.repository;
 
-import th.mfu.domain.Enrollment;
+import th.camt.domain.Enrollment;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
