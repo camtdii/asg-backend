@@ -16,11 +16,6 @@
     <dependencies>
         <dependency>
             <groupId>th.mfu</groupId>
-            <artifactId>web-front</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>th.mfu</groupId>
             <artifactId>domain-model</artifactId>
             <version>${project.version}</version>
         </dependency>

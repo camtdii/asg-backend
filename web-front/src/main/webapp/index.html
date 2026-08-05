@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DII Backend Assignment - Frontend</title>
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; }
+        .endpoint { background: #f5f5f5; padding: 10px; margin: 10px 0; border-radius: 4px; font-family: monospace; }
+        h1 { color: #333; }
+        .status { color: #28a745; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>DII Backend Assignment</h1>
+    <p class="status">Frontend (web-front) running on port 8081 ✓</p>
+    <h2>API Endpoints (Spring Boot on :8080)</h2>
+    <div class="endpoint">GET/POST   /api/students</div>
+    <div class="endpoint">GET/PATCH/DELETE /api/students/{id}</div>
+    <div class="endpoint">GET /api/students/email/{email}</div>
+    <div class="endpoint">GET/POST   /api/courses</div>
+    <div class="endpoint">GET/PATCH/DELETE /api/courses/{id}</div>
+    <div class="endpoint">GET/POST   /api/enrollments</div>
+    <div class="endpoint">GET/PATCH/DELETE /api/enrollments/{id}</div>
+    <div class="endpoint">GET /api/enrollments/student/{studentId}</div>
+    <div class="endpoint">GET /api/enrollments/course/{courseId}</div>
+    <div class="endpoint">GET /api/profiles</div>
+    <div class="endpoint">GET/PATCH/DELETE /api/profiles/{id}</div>
+    <div class="endpoint">GET /api/profiles/student/{studentId}</div>
+    <h2>H2 Console</h2>
+    <div class="endpoint">/h2-console (JDBC: jdbc:h2:mem:assignment_db)</div>
+</body>
+</html>
